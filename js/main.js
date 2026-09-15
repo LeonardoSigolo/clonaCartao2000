@@ -76,35 +76,35 @@ const enviar = () => {
     Swal.fire({
       title: "<Strong>Cuidado!</Strong>",
       html: "Nunca preencha os dados do seu cartão em sites suspeitos!<br>Você poderia ter caído em um <b>golpe!</b>",
-      footer: "Não guardamos seus dados, este é um site de concientização.",
+      footer: "Não guardamos seus dados, este é um site de conscientização.",
       icon: "warning",
     }).then((resultado) => {
       if (resultado.isConfirmed) {
         Swal.fire({
           title: 'O nome desse golpe é "Phishing"',
           html: "Ele se baseia em fingir ser verdadeiro, imitando grandes sites, como <b>Mercado Livre, Amazon, Magazine Luize</b> e etc.",
-          footer: "Não guardamos seus dados, este é um site de concientização.",
+          footer: "Não guardamos seus dados, este é um site de conscientização.",
         }).then((resultado) => {
           if (resultado.isConfirmed) {
             Swal.fire({
               imageUrl: "./img/livre.png",
               html: "Sempre se atente a URL dos sites que visita na internet e que te enviam por mensagem!",
               footer:
-                "Não guardamos seus dados, este é um site de concientização.",
+                "Não guardamos seus dados, este é um site de conscientização.",
             }).then((resultado) => {
               if (resultado.isConfirmed) {
                 Swal.fire({
                   imageUrl: "./img/livri.png",
                   html: "Esse é um exemplo de um site malicioso, muitas vezes acaba passando despercebido por desavisados!",
                   footer:
-                    "Não guardamos seus dados, este é um site de concientização.",
+                    "Não guardamos seus dados, este é um site de conscientização.",
                 }).then((resultado) => {
                   if (resultado.isConfirmed) {
                     Swal.fire({
                       title: "Outro exemplo de site suspeito é este aqui!",
                       html: "Mas não se preocupe, não guardamos seus dados em lugar nenhum, pode conferir no repositório do projeto no github.",
                       showDenyButton: true,
-                      confirmButtonText: "Ver o projeto",
+                      confirmButtonText: "Ver projeto",
                       denyButtonText: "Sair",
                     }).then((resultado) => {
                       if (resultado.isConfirmed) {
