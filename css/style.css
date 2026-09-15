@@ -9,6 +9,7 @@ section {
   display: flex;
   height: 100vh;
   align-items: center;
+  flex: 1;
 }
 
 .esquerda {
@@ -153,13 +154,13 @@ button {
   -moz-appearance: none;
 }
 
-footer{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color:  #1d1d27;
-    color: white;
-    padding: 2px;
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #1d1d27;
+  color: white;
+  padding: 2px;
 }
 
 /*Media*/
@@ -167,22 +168,42 @@ footer{
 @media (max-width: 480px) {
   section {
     flex-direction: column;
-  }
-
-  .direita {
-    width: 100%;
-    height: 50vh;
+    height: auto;
+    flex: 1;
   }
 
   .esquerda {
     width: 100%;
+    height: auto;
+    min-height: 45vh;
     background: linear-gradient(180deg, #1d1d27 0%, #41416b 50%, #ffffff 100%);
+    padding: 20px 0;
+  }
+
+  .direita {
+    width: 100%;
+    height: auto;
+    padding: 20px 5%;
+  }
+
+  .formulario {
+    width: 100%;
+    height: auto;
   }
 
   .cartao {
     width: 100%;
-    height: 100%;
+    height: auto;
     font-size: 14px;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cima,
+  .baixo {
+    width: 100%;
+    max-width: 350px;
+    height: 180px;
   }
 
   .bandeira img {
@@ -194,7 +215,10 @@ footer{
   }
 
   .titulo {
-    font-size: 30px;
+    font-size: 26px;
+    width: 100%;
+    margin: 10px 0 20px 0;
+    text-align: center;
   }
 
   input {
