@@ -1,194 +1,203 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
 }
 
 section {
-    display: flex;
-    height: 100vh;
-    align-items: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
 }
 
 .esquerda {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(90deg, #1d1d27 50%, #ffffff 50%);
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #1d1d27 50%, #ffffff 50%);
 }
 
 .cartao {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-evenly;
-    color: aliceblue;
-    width: 70%;
-    height: 80%;
-    font-size: 18px;
-    padding: 10px;
-    border-radius: 5px;
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: aliceblue;
+  max-width: 100%;
+  height: 80%;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 .cima,
 .baixo {
-    display: flex;
-    width: 100%;
-    height: 30%;
+  left: 0px;
+  position: relative;
+  display: flex;
+  width: 505px;
+  height: 40%;
 }
 
 .baixo {
-    flex-direction: row-reverse;
-}
-
-.none {
-    width: 60%;
+  flex-direction: row-reverse;
 }
 
 .frente,
 .verso {
-    display: flex;
-    background-color: #1d1d1d;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: #000000 0px 0px 10px;
+  display: flex;
+  background-color: #1d1d1d;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: #000000 0px 0px 10px;
 }
 
 .frente {
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0 0 3%;
-    gap: 3%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 3%;
+  gap: 3%;
 }
 
 .bandeira img {
-    width: 25%;
+  width: 25%;
 }
 
 .verso {
-    flex-direction: column-reverse;
-    justify-content: flex-end;
-    gap: 15%;
-    align-items: center;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  gap: 15%;
+  align-items: center;
 }
 
 .cvv {
-    display: flex;
-    width: 70%;
-    height: 20%;
-    justify-content: flex-end;
-    padding: 0 15% 0 0;
-    align-items: center;
-    color: black;
-    background-color: #d3d3d3;
+  display: flex;
+  width: 70%;
+  height: 20%;
+  justify-content: flex-end;
+  padding: 0 15% 0 0;
+  align-items: center;
+  color: black;
+  background-color: #d3d3d3;
 }
 
 .faixa {
-    width: 100%;
-    height: 22%;
-    margin: 5% 0 0 0;
-    background-color: #6b6b6b;
+  width: 100%;
+  height: 22%;
+  margin: 5% 0 0 0;
+  background-color: #6b6b6b;
 }
 
 .chip img {
-    width: 40px;
+  width: 40px;
 }
 
 /* Direita */
 
 .direita {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
 }
 
 .titulo {
-    font-size: 50px;
-    margin: 5%;
-    width: 70%;
+  font-size: 40px;
+  margin: 5%;
+  width: 750px;
 }
 
-table {
-    width: 80%;
-    height: 50vh;
+.formulario {
+  width: 80%;
+  height: 50%;
 }
 
 input,
 button {
-    width: 100%;
-    height: 60%;
-    margin: 10px 0;
-    padding: 0 10px;
-    border-radius: 5px;
-    border: none;
-    background-color: #e4e4e4;
+  width: 100%;
+  height: 60px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e4e4e4;
 }
 
 button {
-    background-color: #636080;
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+  background-color: #636080;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #4d4d5c;
-    transform: scale(1.1);
+  background-color: #4d4d5c;
+  transform: scale(1.1);
 }
 
 input,
 textarea,
 select,
 button {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:  #1d1d27;
+    color: white;
+    padding: 2px;
 }
 
 /*Media*/
 
 @media (max-width: 480px) {
-    section {
-        flex-direction: column;
-    }
+  section {
+    flex-direction: column;
+  }
 
-    .direita {
-        width: 100%;
-        height: 50vh;
-    }
+  .direita {
+    width: 100%;
+    height: 50vh;
+  }
 
-    .esquerda {
-        width: 100%;
-        background: linear-gradient(180deg, #1d1d27 0%, #41416b 50%, #ffffff 100%);
-    }
+  .esquerda {
+    width: 100%;
+    background: linear-gradient(180deg, #1d1d27 0%, #41416b 50%, #ffffff 100%);
+  }
 
-    .cartao {
-        width: 100%;
-        height: 100%;
-        font-size: 14px;
-    }
+  .cartao {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+  }
 
-    .bandeira img {
-        width: 20%;
-    }
+  .bandeira img {
+    width: 20%;
+  }
 
-    .chip img {
-        width: 30px;
-    }
+  .chip img {
+    width: 30px;
+  }
 
-    .titulo {
-        font-size: 30px;
-    }
+  .titulo {
+    font-size: 30px;
+  }
 
-    input {
-        min-height: 60px;
-    }
+  input {
+    min-height: 60px;
+  }
 }
