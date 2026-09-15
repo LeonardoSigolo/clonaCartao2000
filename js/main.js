@@ -82,13 +82,15 @@ const enviar = () => {
       if (resultado.isConfirmed) {
         Swal.fire({
           title: 'O nome desse golpe é "Phishing"',
-          html: "Ele se baseia em fingir ser verdadeiro, imitando grandes sites, como <b>Mercado Livre, Amazon, Magazine Luize</b> e etc.",
-          footer: "Não guardamos seus dados, este é um site de conscientização.",
+          html: "Ele se passa por grandes sites, imitando sites como <b>Mercado Livre, Amazon, Magazine Luiza</b> e etc.",
+          footer:
+            "Não guardamos seus dados, este é um site de conscientização.",
+          icon: "info",
         }).then((resultado) => {
           if (resultado.isConfirmed) {
             Swal.fire({
               imageUrl: "./img/livre.png",
-              html: "Sempre se atente a URL dos sites que visita na internet e que te enviam por mensagem!",
+              html: "Sempre se atente a URL dos sites que visita na internet e aos que te enviam por mensagem!",
               footer:
                 "Não guardamos seus dados, este é um site de conscientização.",
             }).then((resultado) => {
@@ -103,6 +105,7 @@ const enviar = () => {
                     Swal.fire({
                       title: "Outro exemplo de site suspeito é este aqui!",
                       html: "Mas não se preocupe, não guardamos seus dados em lugar nenhum, pode conferir no repositório do projeto no github.",
+                      icon: "success",
                       showDenyButton: true,
                       confirmButtonText: "Ver projeto",
                       denyButtonText: "Sair",
