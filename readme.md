@@ -37,7 +37,7 @@ O README foi escrito com ajuda de IA. O código do projeto foi todo escrito por 
 
 ## Como executar
 
-Abre o `index.html` no navegador. Sem dependência de build, só precisa de internet pra carregar o SweetAlert2 via CDN.
+Abre o `index.html` no navegador ou acesse o [`ClonaCartao2000`](https://leonardosigolo.github.io/clonaCartao2000/). Sem dependência de build, só precisa de internet pra carregar o SweetAlert2 via CDN.
 
 ## Aviso
 
